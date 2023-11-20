@@ -7,7 +7,8 @@ import (
 
 func main() {
 	fmt.Println("Hello, World!")
-	uuid, deuBoa := utils.GenerateUUID(), utils.DeuBoa()
+	uuid:= utils.GenerateUUID()
 	fmt.Println(uuid)
-	fmt.Println(deuBoa)
+	utils.Public()
+	utils.UsePrivate()
 }
