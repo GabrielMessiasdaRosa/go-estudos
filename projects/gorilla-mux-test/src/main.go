@@ -7,8 +7,9 @@ import (
 
 func main() {
 	fmt.Println("Hello, World!")
-	uuid:= utils.GenerateUUID()
+	uuid, crawlerResult := utils.GenerateUUID(), utils.TestingBlankIdentifier()
 	fmt.Println(uuid)
 	utils.Public()
 	utils.UsePrivate()
+	fmt.Println(crawlerResult)
 }
